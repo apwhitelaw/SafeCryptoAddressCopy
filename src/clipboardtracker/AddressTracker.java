@@ -86,6 +86,9 @@ public class AddressTracker extends Thread implements ClipboardOwner {
     }
 
     public static void main(String[] args) {
+        MyTrayIcon myTrayIcon = new MyTrayIcon();
+        myTrayIcon.setupTrayIcon();
+
         AddressTracker b = new AddressTracker();
         b.run();
     }
